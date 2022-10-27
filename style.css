@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(150deg, #0f2b05, #000000);
+  height: 100vh;
+  text-align: center;
+}
+
+header {
+  padding: 75px 0;
+}
+
+header h3{
+  margin-top: 20px;
+  background-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  width: 354px;
+  height: 508px;
+  background-image: url(./assets/bg-explorer.svg);
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: appear 0.4s forwards;
+}
+
+.card > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f7dd43;
+  margin-top: 115px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.info {
+  color: #ffffff;
+  margin-top: 98px;
+  margin-left: 70px;
+  text-align: left;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.info h1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.info p {
+  font-size: 14px;
+  line-height: 160%;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
