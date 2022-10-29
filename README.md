@@ -1,6 +1,6 @@
 # Figurinha da Copa
 
-Uma página que simula uma figurinha da copa
+Uma página que simula uma figurinha da copa.
 
 <img src="./assets/gif.gif" />
 
